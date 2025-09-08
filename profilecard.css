@@ -1,0 +1,113 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+}
+
+.profilecard {
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.profilecard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 1);
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+
+}
+
+.text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: white;
+}
+
+.text .title {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.text .bio {
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 25px;
+  max-width: 320px;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.tech span {
+  background-color: #2a2a2a;
+  color: orange;
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+
+.button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: #121212;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #388e3c;
+  box-shadow: 0 6px 18px rgba(56, 142, 60, 0.8);
+}
